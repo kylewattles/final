@@ -1,0 +1,86 @@
+{
+
+    "adoption": [
+        {
+            "petId": 2,
+            "amount": 1
+        },
+        {
+            "petId": 1,
+            "amount": 1
+        }
+    ],
+
+    "pets": [
+      {
+        "id": 1,
+        "name": "Bella",
+        "type": "Dog",
+        "breed": "Labrador Retriever",
+        "age": 3,
+        "price": 500
+      },
+      {
+        "id": 2,
+        "name": "Max",
+        "type": "Cat",
+        "breed": "Siamese",
+        "age": 2,
+        "price": 300
+      },
+      {
+        "id": 3,
+        "name": "Charlie",
+        "type": "Bird",
+        "breed": "Parrot",
+        "age": 1,
+        "price": 150
+      },
+      {
+        "id": 4,
+        "name": "Lucy",
+        "type": "Dog",
+        "breed": "Bulldog",
+        "age": 4,
+        "price": 600
+      },
+      {
+        "id": 5,
+        "name": "Daisy",
+        "type": "Cat",
+        "breed": "Persian",
+        "age": 3,
+        "price": 350
+      }
+    ],
+    "customers": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "phone": "123-456-7890"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "phone": "987-654-3210"
+      }
+    ],
+    "orders": [
+      {
+        "id": 1,
+        "customerId": 1,
+        "petId": 1,
+        "date": "2025-03-01",
+        "total": 500
+      },
+      {
+        "id": 2,
+        "customerId": 2,
+        "petId": 3,
+        "date": "2025-03-05",
+        "total": 150
+      }
+    ]
+  }
