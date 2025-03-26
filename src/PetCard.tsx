@@ -1,5 +1,6 @@
 import React from "react"
 import AddAdoption from "./adoptionbutton"
+import ImageComponent from "./PetImages";
 
 type Pet = {
     id: number;
@@ -8,6 +9,7 @@ type Pet = {
     breed: string;
     age: number;
     price: number;
+    image: string
 };
 
 type PetCardProps = {
@@ -19,6 +21,7 @@ const PetCard: React.FC<PetCardProps> = ({ pet, addAdoption}) => {
     return (
         <div className="card flex-grow-1">
           <div className="card-body">
+            <ImageComponent image={pet.image} />
             <h3 className="card-title">{pet.name}</h3>
          <p className="card-text">{pet.type}</p>
          <p className="card-text">{pet.breed}</p>

@@ -3,6 +3,7 @@ import PetCard from "./PetCard";
 import AddAdoption from "./adoptionbutton";
 import PetHeader from "./PetHeader";
 import Cart from "./cart"
+import CheckOut from "./CheckOut"
 
 type Pet = {
   id: number;
@@ -11,6 +12,7 @@ type Pet = {
   breed: string;
   age: number;
   price: number;
+  image: string;
 };
 
 type CartItem = {
@@ -44,6 +46,7 @@ export default function App() {
   }
 
   return (
+    <>
     <div className="container mt-3">
       <PetHeader/>
       <div className="d-flex flex-wrap gap-3">
@@ -52,6 +55,10 @@ export default function App() {
         ))}
       </div>
       <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
+    <CheckOut/>
     </div>
+    
+    
+    </>
   );
 }
