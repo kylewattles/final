@@ -1,9 +1,15 @@
 import React from "react"
 
-const checkoutButton: React.FC = () => {
+type CheckoutProps = {
+    onCheckout: () => void
+}
+
+
+
+const checkoutButton: React.FC<CheckoutProps> = ({onCheckout}) => {
     return (
-        <div>
-            <button className="btn btn-primary">Checkout</button>
+        <div style={{ paddingBottom: "20px" }}>
+            <button className="btn btn-primary" onClick={onCheckout}>Checkout</button>
         </div>
     )
 } 

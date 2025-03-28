@@ -18,7 +18,8 @@
         "type": "Dog",
         "breed": "Labrador Retriever",
         "age": 3,
-        "price": 500
+        "price": 500,
+        "image": "src/public/labradorRetriever.jpg"
       },
       {
         "id": 2,
@@ -26,7 +27,8 @@
         "type": "Cat",
         "breed": "Siamese",
         "age": 2,
-        "price": 300
+        "price": 300,
+        "image": "src/public/chimera.jpg"
       },
       {
         "id": 3,
@@ -34,7 +36,8 @@
         "type": "Bird",
         "breed": "Parrot",
         "age": 1,
-        "price": 150
+        "price": 150,
+        "image": "src/public/uglybird.jpg"
       },
       {
         "id": 4,
@@ -42,7 +45,8 @@
         "type": "Dog",
         "breed": "Bulldog",
         "age": 4,
-        "price": 600
+        "price": 600,
+        "image": "src/public/bulldog.jpg"
       },
       {
         "id": 5,
@@ -50,7 +54,8 @@
         "type": "Cat",
         "breed": "Persian",
         "age": 3,
-        "price": 350
+        "price": 350,
+        "image": "src/public/cat.jpg"
       }
     ],
     "customers": [

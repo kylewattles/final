@@ -24,7 +24,7 @@ const Cart: React.FC<CartProps> = ({ cartItems, removeFromCart }) => {
           {cartItems.map((item) => (
             <li key={item.id}>
               {item.name} - ${item.price.toFixed(2)}
-              <button onClick={() => removeFromCart(item.id)}>Cancel</button>
+              <button className="btn btn-danger" onClick={() => removeFromCart(item.id)}>Cancel</button>
             </li>
           ))}
         </ul>

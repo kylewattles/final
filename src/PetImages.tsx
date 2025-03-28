@@ -9,7 +9,7 @@ type ImageComponentProps = {
 const imageComponent: React.FC<ImageComponentProps> = ({image}) => {
     return (
         <div>
-            <img src = {image} alt="labrador Retriever" style={{width: "100%", height: "auto"}} />
+            <img src = {image} alt="labrador Retriever" style={{width: "125px", height: "120px"}} />
         </div>
     )
 }
