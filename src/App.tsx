@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import PetCard from "./PetCard";
 import PetHeader from "./PetHeader";
 import Cart from "./cart";
-import CheckoutPage from "./checkoutPage";
+import CheckoutPage from "./CheckoutPage";
 import AboutPage from "./AboutPage";
+import { DarkMode } from "./DarkMode";
 
 type Pet = {
   id: number;
@@ -59,9 +60,10 @@ export default function App() {
     <Router>
       <div className="container mt-3">
         <PetHeader />
+        <DarkMode/>
         <nav>
           <Link to="/" className="btn btn-primary me-2">Home</Link>
-          <Link to="/checkout" className="btn btn-secondary me-2">Checkout</Link>
+          
           <Link to="/about" className="btn btn-info me-2">About</Link>
         </nav>
         <Routes>
@@ -75,6 +77,7 @@ export default function App() {
                   ))}
                 </div>
                 <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
+                <Link to="/checkout" className="btn btn-secondary me-2">Checkout</Link>
               </>
             }
           />

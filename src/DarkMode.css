@@ -1,0 +1,18 @@
+body.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  body.dark-mode a {
+    color: white;
+  }
+  
+  body.dark-mode .btn {
+    border-color: white;
+    color: white;
+  }
+  
+  body.dark-mode .btn:hover {
+    background-color: white;
+    color: black;
+  }
